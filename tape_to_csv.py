@@ -1,4 +1,4 @@
-# python read_tape.py
+# reads geography tape files and outputs them to a workable csv table
 
 import time
 import csv

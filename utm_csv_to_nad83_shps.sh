@@ -1,4 +1,4 @@
-# creates point files for csv tables with different utm projections
+# creates point shapefiles for csv tables with different utm projections
 
 cd csv_by_utm_zone
 for i in *

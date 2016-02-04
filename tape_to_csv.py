@@ -1,4 +1,4 @@
-# reads geography tape files and outputs them to a workable csv table
+# python read_tape.py
 
 import time
 import csv
@@ -30,18 +30,20 @@ with open(code_key, 'rb') as csvfile:
 	for code in codecsv:
 		# append code name to header list
 		header.append(code[0])
-		# calculate code length 
+		# calculate code length
 		code_length = 1 + (int(code[2]) - int(code[1]))
 		# generate code dictionary in form
 		# (name,[start int, end int, length])
 		code_dict[code[0]] = [int(code[1]), int(code[2]), code_length]
+	# append a field name for any trailing chars not picked up by the code table
+	header.append("XTRA_CHARS")
 	# write header list to the out csv table
-	writer.writerow(header)	
+	writer.writerow(header)
 # sort code_dict by initial order
 code_dict = sorted(code_dict.items(), key=operator.itemgetter(1))
 
 # print the code dictionary if you want
-print code_dict	
+print code_dict
 
 # set up reading the tape file
 text_file = open(tape_file, "r")
@@ -66,6 +68,7 @@ for strip in strips:
 	# append any trailing chars that don't have an associated code
 	trailer = strip[end_val:]
 	row.append(trailer)
+	
 	# write row to csv output table
 	writer.writerow(row)
 	count = count + 1
@@ -81,3 +84,6 @@ seconds = (end_time - begin_time)
 minutes = seconds / 60
 print seconds
 print "seconds"
+print "=============="
+print minutes
+print "minutes"

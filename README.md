@@ -16,7 +16,7 @@ Output csv table:
 
 ![alt_text](img/img_csv.png)
 
-This .csv table can then be converted into a point Shapefile (.shp) with ogr2ogr.  If coordinates are given in UTM, then the utm_csv_to_points.py script will split the table by utm zone.  Then, the to_shp.sh and shp_merge.py scripts can be used to create a single, full coverage, point Shapefile.  
+This .csv table can then be converted into a point Shapefile (.shp) with ogr2ogr.  If coordinates are given in UTM, then the "tape_csv_to_csv_by_utm.py" script will split the table by utm zone.  Then, the "ogr_utm_csv_to_shps.sh" and "shp_merge_ogr.py" scripts can be used to create a single, full coverage, point Shapefile.  
 
 Output points on a map with Enumeration Area (black) & Census Tract (red) boundaries
 

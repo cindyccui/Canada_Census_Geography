@@ -2,9 +2,7 @@
 
 The scripts in this repository read Statistics Canada geography tape files and converts them into readable tables and point files for GIS analysis.
 
-Tape files are essentially text files where each information for each feature is included in each row, while the order of the characters
-
-In census geography tape files, each row pertains to an Enumeration Area.  These are small areas, composed of one or more neighbouring blocks, and are typically the lowest level in which census data is available for analysis.
+In census geography tape files, each row contains data that pertains to an Enumeration Area, typically the lowest level in which census data is available for analysis.  This data is compact and requires a record layout table to discern what each character represents.
 
 Snippet of a geography tape file:
 

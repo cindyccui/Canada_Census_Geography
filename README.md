@@ -7,7 +7,7 @@ Tape files are essentially text files where each information for each feature is
 In census geography tape files, each row pertains to an Enumeration Area.  These are small areas, composed of one or more neighbouring blocks, and are typically the lowest level in which census data is available for analysis.
 
 Snippet of a geography tape file:
-(image)
+![alt text](imgs/icon48.png "Logo Title Text 1")
 
 The script tape_to_csv.py converts this tape file (.txt) into a readable table (.csv) using a record layout table.
 

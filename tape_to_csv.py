@@ -1,5 +1,3 @@
-# python read_tape.py
-
 import time
 import csv
 import operator

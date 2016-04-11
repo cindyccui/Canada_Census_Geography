@@ -1,14 +1,18 @@
 The scripts in this repository read various Statistics Canada attribute files and converts them into readable tables and point files for GIS analysis.
 
-#### Converting Geographic Attribute Files
+The following provides a bit more detail on converting specific file types.
 
-In census geography tape files, each row contains data that pertains to an Enumeration Area, typically the lowest level in which census data is available for analysis.  This data is compact and requires a record layout table to discern what each character represents.
+---
+
+#### 1 - Converting Geographic Attribute Files
+
+In census geography attribute files, each row contains data that pertains to an Enumeration Area, typically the lowest level in which census data is available for analysis.  This data is compact and requires a record layout table to discern what each character represents.
 
 Snippet of a geography tape file:
 
 ![alt_text](img/img_tape.png)
 
-The script tape_to_csv.py converts this tape file (.txt) into a readable table (.csv) using a record layout table.
+The script tape_to_csv.py converts this attribute file (.txt) into a readable table (.csv) using a record layout table.
 
 Output csv table:
 

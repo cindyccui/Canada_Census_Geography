@@ -1,6 +1,6 @@
-###Geography Tape File Converter
+The scripts in this repository read various Statistics Canada attribute files and converts them into readable tables and point files for GIS analysis.
 
-The scripts in this repository read Statistics Canada geography tape files and converts them into readable tables and point files for GIS analysis.
+#### Converting Geographic Attribute Files
 
 In census geography tape files, each row contains data that pertains to an Enumeration Area, typically the lowest level in which census data is available for analysis.  This data is compact and requires a record layout table to discern what each character represents.
 

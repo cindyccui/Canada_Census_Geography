@@ -1,4 +1,4 @@
-The scripts in this repository read various Statistics Canada attribute files and converts them into readable tables and point files for GIS analysis.
+The scripts in this repository read various older Statistics Canada geographic files and converts them into readable tables and point files for GIS analysis.
 
 The following provides a bit more detail on converting specific file types.
 

@@ -1,0 +1,3 @@
+img_tape.png
+img_csv.png
+img_map.png

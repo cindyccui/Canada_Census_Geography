@@ -1,4 +1,4 @@
-The scripts in this folder are used to convert Geographic Attribute Files (GAF) from their original ASCII text file format into .csv tables and point Shapefile while maintaining all tabular information.
+The scripts in this folder are used to convert Block-Face Data Files (BF) from their original ASCII text file format into .csv tables and point Shapefile while maintaining all tabular information.
 
 #### gaf_to_csv.py
 Converts the GAF.txt into a csv table using the supplied csv key code

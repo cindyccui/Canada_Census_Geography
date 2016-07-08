@@ -14,6 +14,28 @@ Merges shapefiles (e.g. from previous step) into one Shapefile. Again this requi
 
 For some years, it is not required to separate data by UTM as there are precise fields for Latitude and Longitude.
 
+---
+
+In census geography attribute files, each row contains data that pertains to an Enumeration Area, typically the lowest level in which census data is available for analysis.  This data is compact and requires a record layout table to discern what each character represents.
+
+Snippet of a geography tape file:
+
+![alt_text](img/img_tape.png)
+
+The script gaf_to_csv.py converts this attribute file (.txt) into a readable table (.csv) using a record layout table.
+
+Output csv table:
+
+![alt_text](img/img_csv.png)
+
+This .csv table can then be converted into a point Shapefile (.shp) with ogr2ogr.  If coordinates are given in UTM, then the "csv_to_csv_by_utm.py" script will split the table by utm zone.  Then, the "csv_to_shps.sh" and "shp_merge_ogr.py" scripts can be used to create a single, full coverage, point Shapefile.  
+
+Output points on a map with Enumeration Area (black) & Census Tract (red) boundaries
+
+![alt_text](./img/img_map.png)
+
+---
+
 All scripts are under the MIT License:
 
 ---

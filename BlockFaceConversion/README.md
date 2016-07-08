@@ -1,15 +1,15 @@
 The scripts in this folder are used to convert Geographic Attribute Files (GAF) from their original ASCII text file format into .csv tables and point Shapefile while maintaining all tabular information.
 
---- gaf_to_csv.py ---
+#### gaf_to_csv.py
 Converts the GAF.txt into a csv table using the supplied csv key code
 
---- csv_to_csv_by_utm.py ---
+#### csv_to_csv_by_utm.py
 Divides the csv table from the previous script into separate csv tables for each utm zone. Each output table includes the epsg code in the file name.
 
---- csv_to_shp_batch.sh ---
+#### csv_to_shp_batch.sh
 Batch converts csv tables into point Shapefiles. Also reprojects to NAD83. Requires GDAL/OGR to be installed.
 
---- merge_shps.py ---
+#### merge_shps.py
 Merges shapefiles (e.g. from previous step) into one Shapefile. Again this requires GDAL/OGR to be installed
 
 For some years, it is not required to separate data by UTM as there are precise fields for Latitude and Longitude.
